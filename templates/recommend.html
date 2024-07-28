@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Recommendations</title>
+  </head>
+  <body>
+    <h1>Recommended Movies</h1>
+    <ul>
+      {% for movie in movies %}
+        <li>{{ movie.title }} ({{ movie.avg_rating }})</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
